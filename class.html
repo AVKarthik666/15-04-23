@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+ <script>
+ 	class Student{
+ 		constructor(studentName,studentEmail){
+ 			this.studentName=studentName;
+ 			this.studentEmail=studentEmail;
+ 		}
+ 		    studentsList=[];
+ 		    getStudentsInfo(){
+ 		    	return { name: this.studentName, email: this.studentEmail};
+ 		    }
+ 		    addSubject(name){
+ 		    	this.studentsList.push(name);
+ 		    }
+ 		    getSubjectInfo(){
+ 		    	return this.studentsList;
+ 		    }
+ 	}
+ 	var studentObj=new Student("siva","siva@codegnan.com");
+ 	console.log(studentObj.getStudentsInfo());
+ 	studentObj.addSubject("HTML")
+ 	studentObj.addSubject("CSS")
+ 	studentObj.addSubject("JS")
+ 	console.log(studentObj.getSubjectInfo());
+ </script>
+</body>
+</html>
